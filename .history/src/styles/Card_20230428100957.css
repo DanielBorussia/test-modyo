@@ -1,0 +1,46 @@
+*{
+    transition: all 0.5s;
+}
+.card{
+    border: 2px solid rgb(46, 46, 161) !important;
+    margin: 5px;
+    display: inline-block !important;
+}
+.card__container{
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card, .card__container, .card__face{
+    height: 150px;
+    width: 150px;
+    max-width: 150px !important;
+    min-width: 80px !important;
+}
+
+.card__container--flipped{
+    transform: rotateY(180deg);
+}
+
+.card__face{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+}
+
+.card:hover{
+    transform: scale(0.95);
+}
+
+.card__image{
+    width: 100%;
+    height: 100%;
+}
+
+.card__image--disable{
+    opacity: 0.6;
+}

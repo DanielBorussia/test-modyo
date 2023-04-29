@@ -1,0 +1,45 @@
+*{
+    transition: all 0.5s;
+}
+.card__container{
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    border: 2px solid rgb(46, 46, 161);
+}
+
+.card, .card__container, .card__face{
+    height: calc(70vh/4);
+    width: calc(70vh/6);
+    min-width: 80px;
+}
+
+.card:hover .card__container{
+    transform: rotateY(180deg);
+}
+
+.card__face{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+}
+
+.card__front{
+   
+}
+
+/*.card:hover{
+    transform: scale(0.95);
+}*/
+
+.card__image{
+    width: 100%;
+    height: 100%;
+}
+
+.card__image--disable{
+    opacity: 0.6;
+}

@@ -1,0 +1,7 @@
+.cards__container{
+    width: 90%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}

@@ -1,0 +1,17 @@
+.card{
+    display: inline-block;
+    margin: 5px;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    border: 2px solid rgb(46, 46, 161);
+}
+
+.card:hover{
+    transform: scale(0.95);
+}
+
+.card__image{
+    width: 200px;
+    height: 200px;
+}
